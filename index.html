@@ -74,11 +74,11 @@
 				  </p>
 				  <p style="text-align:center">
 					<a href="mailto:rocketnirjhardas@gmail.com">Email</a> &nbsp/&nbsp
-					<a href="data/CV.pdf">CV</a> &nbsp/&nbsp
+					<a href="data/CV.pdf" target="_blank">CV</a> &nbsp/&nbsp
 					<!-- <a href="data/JonBarron-bio.txt">Bio</a> &nbsp/&nbsp -->
-					<a href="https://scholar.google.com/citations?hl=en&user=Zf3YrgYAAAAJ">Google Scholar</a> &nbsp/&nbsp
+					<a href="https://scholar.google.com/citations?hl=en&user=Zf3YrgYAAAAJ" target="_blank">Google Scholar</a> &nbsp/&nbsp
 					<a href="https://www.linkedin.com/in/nirjhar-das-874596195" target="_blank">Linkedin</a> &nbsp/&nbsp
-					<a href="https://github.com/nirjhar-das">Github</a>
+					<a href="https://github.com/nirjhar-das" target="_blank">Github</a>
 				  </p>
 				</td>
 				<td style="padding:2.5%;width:40%;max-width:40%">
@@ -281,11 +281,36 @@
 				<em> <a href="https://www.nature.com/ncomms/" target="_blank">Nature Communications, Vol. 13</a>, 2022&emsp14;</em>
 			
 				<div class="paper" id="natcomm">	
-					<a href="https://www.nature.com/articles/s41467-022-33291-z" target="_blank">Paper</a>	
+					<a href="https://www.nature.com/articles/s41467-022-33291-z" target="_blank">paper</a>	/
+					<a class="tog" href="javascript:toggleblock('app_abs')">abstract</a> / 
+				  <a class="tog" href="javascript:toggleblock('app_bib')">bibtex</a>
+				  <p align="justify">
+					<i id="app_abs">
+						Inter and intra-tumoral heterogeneity are major stumbling blocks in the treatment of cancer and are responsible for imparting differential drug responses in cancer patients. Recently, the availability of high-throughput screening datasets has paved the way for machine learning based personalized therapy recommendations using the molecular profiles of cancer specimens. In this study, we introduce Precily, a predictive modeling approach to infer treatment response in cancers using gene expression data. In this context, we demonstrate the benefits of considering pathway activity estimates in tandem with drug descriptors as features. We apply Precily on single-cell and bulk RNA sequencing data associated with hundreds of cancer cell lines. We then assess the predictability of treatment outcomes using our in-house prostate cancer cell line and xenografts datasets exposed to differential treatment conditions. Further, we demonstrate the applicability of our approach on patient drug response data from The Cancer Genome Atlas and an independent clinical study describing the treatment journey of three melanoma patients. Our findings highlight the importance of chemo-transcriptomics approaches in cancer treatment selection.
+					</i>
+				  </p>
+				  <bibtext xml:space="preserve" id="app_bib">
+					@article{Chawla2022,
+						author={Chawla, Smriti and Rockstroh, Anja and Lehman, Melanie and Ratther, Ellca and Jain, Atishay and Anand, Anuneet and Gupta, Apoorva and Bhattacharya, Namrata	and Poonia, Sarita and Rai, Priyadarshini and Das, Nirjhar and Majumdar, Angshul and {Jayadeva} and Ahuja, Gaurav and Hollier, Brett G. and Nelson, Colleen C. and Sengupta, Debarka},
+						title={Gene expression based inference of cancer drug sensitivity},
+						journal={Nature Communications},
+						year={2022},
+						month={Sep},
+						day={27},
+						volume={13},
+						number={1},
+						pages={5680},
+						issn={2041-1723},
+						doi={10.1038/s41467-022-33291-z},
+						url={https://doi.org/10.1038/s41467-022-33291-z}
+						}
+						
+					</bibtext>
 					<!--<a class="tog" href="https://github.com/Bharat-Runwal/RWL-GNN" target="_blank">code</a> /	
 					<a class="tog" href="https://docs.google.com/presentation/d/1qDS09BlPXeO1VtDIVmji1r8ZzpUY4NmujLRa6Aw9QiQ/edit?usp=sharing" target="_blank">Slides</a>
 					-->
-				</div>       
+				</div>
+				<script language="JavaScript">hideblock('app_bib');hideblock('app_abs');</script>       
 				<!--<a href="https://colab.research.google.com/github/Bharat-Runwal/RWL-GNN/blob/main/Demo_RWL_GNN.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg"></a>-->
 			</td>
 			</tr>
