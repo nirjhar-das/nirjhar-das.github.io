@@ -1,11 +1,11 @@
 // from: http://www.robots.ox.ac.uk/~vedaldi/assets/hidebib.js
-const currentTheme = window.localStorage.getItem("theme");
-if (currentTheme == "dark") {
-    document.body.classList.add("dark-mode");
-    const getIcon = document.getElementById('moonIcon');
-    getIcon.src = 'images/sun.png';
-    getIcon.alt = 'Light';
-}
+// const currentTheme = window.localStorage.getItem("theme");
+// if (currentTheme == "dark") {
+//     document.body.classList.add("dark-mode");
+//     const getIcon = document.getElementById('moonIcon');
+//     getIcon.src = 'images/sun.png';
+//     getIcon.alt = 'Light';
+// }
 
 function hideallbibs()
 {
@@ -60,9 +60,9 @@ function toggleDarkMode(){
         getIcon.alt = 'Dark';
     }
     //const getLink = document.getElementById('darkBtn')
-    let theme = "light";
-    if (document.body.classList.contains("dark-mode")) {
-        theme = "dark";
-    }
-    window.localStorage.setItem("theme", theme);
+    // let theme = "light";
+    // if (document.body.classList.contains("dark-mode")) {
+    //     theme = "dark";
+    // }
+    // window.localStorage.setItem("theme", theme);
 }
