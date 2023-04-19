@@ -67,15 +67,53 @@ a {
   color: #1772d0;
   text-decoration: none;
 }
-
-a:focus,
+a.focus,
 a:hover {
   color: #f09228;
   text-decoration: none;
 }
-button {
+
+body{
+  background-color: white;
+  color: black;
+}
+body.dark-mode {
+	background-color: #222;
+	color: #fff;
+}
+
+header.dark-mode {
+	background-color: #111;
+	color: #fff;
+}
+
+body.dark-mode a{
+  color: #01af6d
+}
+
+body.dark-mode a:hover{
+  color: #f09228;
+}
+body.dark-mode a:focus{
+  color: #f09228;
+}
+
+button{
+  color: black;
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  background: none;
   font-size: 1.5em;
-  margin: 5px;
+}
+
+button.dark-mode{
+  color: white;
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  background: none;
+  font-size: 1.5em
 }
 
 body,
@@ -87,7 +125,6 @@ a {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 14px
 }
-
 strong {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 14px;
@@ -132,14 +169,4 @@ name {
 
 span.highlight {
   background-color: #ffffd0;
-}
-
-body.dark-mode-on {
-	background-color: #222;
-	color: #fff;
-}
-
-header.dark-mode-on {
-	background-color: #111;
-	color: #fff;
 }
