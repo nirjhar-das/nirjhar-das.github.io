@@ -129,3 +129,33 @@ name {
 span.highlight {
   background-color: #ffffd0;
 }
+
+body.dark-mode-on {
+	background-color: #222;
+	color: #fff;
+}
+
+header.dark-mode-on {
+	background-color: #111;
+	color: #fff;
+}
+
+:root {
+  --background-color: white;
+  --text-color: black;
+}
+
+.dark-mode-toggle {
+  color: var(--text-color);
+  background-color: transparent;
+  border: none;
+}
+
+.dark-mode-toggle i:before {
+  content: "\f186";
+}
+
+.dark-mode-toggle.dark-mode-on i:before {
+  content: "\f185";
+}
+
