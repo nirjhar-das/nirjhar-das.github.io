@@ -73,6 +73,10 @@ a:hover {
   color: #f09228;
   text-decoration: none;
 }
+button {
+  font-size: 1.5em;
+  margin: 5px;
+}
 
 body,
 td,
