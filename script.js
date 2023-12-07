@@ -1,11 +1,36 @@
 // from: http://www.robots.ox.ac.uk/~vedaldi/assets/hidebib.js
-const currentTheme = window.localStorage.getItem("theme");
-if (currentTheme == "dark") {
-    document.body.classList.add("dark-mode");
-    const getIcon = document.getElementById('moonIcon');
-    getIcon.src = 'images/sun.png';
-    getIcon.alt = 'Light';
+// const currentTheme = window.localStorage.getItem("theme");
+// if (currentTheme == "dark") {
+//     document.body.classList.add("dark-mode");
+//     const getIcon = document.getElementById('moonIcon');
+//     getIcon.src = 'images/sun.png';
+//     getIcon.alt = 'Light';
+// }
+
+function setDarkMode(dark, preference) {
+    if (dark) {
+        preference !== "dark" ? localStorage.setItem('theme', 'dark') : localStorage.removeItem('theme');
+        document.documentElement.classList.add('dark-mode');
+        const getIcon =  document.getElementById('moonIcon')
+        getIcon.src = 'images/sun.png';
+        getIcon.alt = 'Light';
+    } else if (!dark) {
+        preference !== "light" ? localStorage.setItem('theme', 'light') : localStorage.removeItem('theme');
+        document.documentElement.classList.remove('dark-mode');
+        const getIcon =  document.getElementById('moonIcon')
+        getIcon.src = 'images/sun.png';
+        getIcon.alt = 'Light';
+    }
+};
+const preference = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+if (localStorage.getItem('theme') === "dark" || (!('theme' in localStorage) && preference === 'dark')) {
+    setDarkMode(true, preference);
 }
+window.onload = function () {
+    document.getElementById('darkBtn').addEventListener('click', function() {
+        setDarkMode(!document.documentElement.classList.contains('dark-mode'), preference);
+    });
+};
 
 function hideallbibs()
 {
@@ -49,20 +74,20 @@ function hideblock(blockId)
    block.style.display = 'none' ;
 }
 
-function toggleDarkMode(){
-    const getIcon = document.getElementById('moonIcon');
-    document.body.classList.toggle("dark-mode");
-    if (getIcon.src.match('images/moon.png')) {
-        getIcon.src = 'images/sun.png';
-        getIcon.alt = 'Light';
-    } else {
-        getIcon.src = 'images/moon.png';
-        getIcon.alt = 'Dark';
-    }
-    const getLink = document.getElementById('darkBtn')
-    let theme = "light";
-    if (document.body.classList.contains("dark-mode")) {
-        theme = "dark";
-    }
-    window.localStorage.setItem("theme", theme);
-}
+// function toggleDarkMode(){
+//     const getIcon = document.getElementById('moonIcon');
+//     document.body.classList.toggle("dark-mode");
+//     if (getIcon.src.match('images/moon.png')) {
+//         getIcon.src = 'images/sun.png';
+//         getIcon.alt = 'Light';
+//     } else {
+//         getIcon.src = 'images/moon.png';
+//         getIcon.alt = 'Dark';
+//     }
+//     const getLink = document.getElementById('darkBtn')
+//     let theme = "light";
+//     if (document.body.classList.contains("dark-mode")) {
+//         theme = "dark";
+//     }
+//     window.localStorage.setItem("theme", theme);
+// }
