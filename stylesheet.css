@@ -63,42 +63,42 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-a {
+html a {
   color: #1772d0;
   text-decoration: none;
 }
-a.focus,
-a:hover {
+html a.focus,
+html a:hover {
   color: #f09228;
   text-decoration: none;
 }
 
-body{
+html body{
   background-color: white;
   color: black;
 }
-body.dark-mode {
+html.dark-mode body{
 	background-color: #222;
 	color: #fff;
 }
 
-header.dark-mode {
+html.dark-mode header {
 	background-color: #111;
 	color: #fff;
 }
 
-body.dark-mode a{
+html.dark-mode a{
   color: #01af6d
 }
 
-body.dark-mode a:hover{
+html.dark-mode a:hover{
   color: #f09228;
 }
-body.dark-mode a:focus{
+html.dark-mode a:focus{
   color: #f09228;
 }
 
-button{
+html button{
   color: black;
   background-color: transparent;
   padding: 0;
@@ -107,13 +107,30 @@ button{
   font-size: 1.5em;
 }
 
-button.dark-mode{
+html.dark-mode button{
   color: white;
   background-color: transparent;
   padding: 0;
   border: none;
   background: none;
   font-size: 1.5em
+}
+
+html .sun-icon {
+  display: none;
+}
+
+/* Display the appropriate icon based on the mode */
+html.dark-mode .sun-icon{
+  display: inline-block;
+}
+
+.moon-icon{
+  display: inline-block;
+}
+
+html.dark-mode .moon-icon{
+  display: none;
 }
 
 body,

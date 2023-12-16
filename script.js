@@ -8,29 +8,26 @@
 // }
 
 function setDarkMode(dark, preference) {
+    console.log('Button triggered')
     if (dark) {
         preference !== "dark" ? localStorage.setItem('theme', 'dark') : localStorage.removeItem('theme');
         document.documentElement.classList.add('dark-mode');
-        const getIcon =  document.getElementById('moonIcon')
-        getIcon.src = 'images/sun.png';
-        getIcon.alt = 'Light';
     } else if (!dark) {
         preference !== "light" ? localStorage.setItem('theme', 'light') : localStorage.removeItem('theme');
         document.documentElement.classList.remove('dark-mode');
-        const getIcon =  document.getElementById('moonIcon')
-        getIcon.src = 'images/sun.png';
-        getIcon.alt = 'Light';
     }
-};
+}
 const preference = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
 if (localStorage.getItem('theme') === "dark" || (!('theme' in localStorage) && preference === 'dark')) {
     setDarkMode(true, preference);
 }
-window.onload = function () {
+
+function onloadfunc(){
     document.getElementById('darkBtn').addEventListener('click', function() {
         setDarkMode(!document.documentElement.classList.contains('dark-mode'), preference);
     });
-};
+}
+window.onload = onloadfunc;
 
 function hideallbibs()
 {

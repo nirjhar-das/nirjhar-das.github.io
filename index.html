@@ -8,7 +8,6 @@
   
   <meta name="author" content="Nirjhar Das">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="script.js"></script>
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <script src="https://kit.fontawesome.com/0260614595.js" crossorigin="anonymous"></script>
   <!-- <link rel="icon" type="image/png" href="images/favicon.png"> -->
@@ -21,6 +20,7 @@
 		</script>
 		<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 		</script>
+	<script src="script.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -53,7 +53,7 @@
 						<i class="fas fa-moon" id="moonIcon"></i>
 					 </a>-->
 					<!--<button id="darkBtn" class="dark-mode-toggle" onclick=javascript:toggleDarkMode()><i class="fas fa-moon" id="moonIcon"></i></button>-->
-					<button id="darkBtn" class="dark-mode-toggle"><img src="images/moon.png" alt="Dark" id="moonIcon" width="30" height="30"></img></button>
+					<button id="darkBtn" class="dark-mode-toggle"><img src="images/moon.png" alt="Dark" class="moon-icon" width="30" height="30"><img src="images/sun.png" alt="Light" class="sun-icon" width="30" height="30"></img></button>
 				</td>
 				<!--<td style="padding:1.5%;width:16%;vertical-align:middle;text-align:center">
 					<a href="#education" target="_self">Education</a>
@@ -73,25 +73,24 @@
 					<name>Nirjhar Das</name>
 				  </p>
 				  <p>I am a fresh graduate with a B.Tech in Electrical Engineering from <a href="https://home.iitd.ac.in/" target="_blank"> IIT Delhi</a>. 
-					I have completed my thesis under <a href="https://sites.google.com/site/arpanchattop/home" target="_blank">Prof. Arpan Chattopadhyay</a> in areas of Reinforcement Learning and Multi-Armed Bandits. 
-					Alongside my major, I have also completed a <a href="https://ee.iitd.ac.in/public/frontend/uploads/SE_areas_course_list.pdf" target="_blank">Specialization in Cognitive and Intelligent Systems</a> (AI Focus Area) in the <a href="https://ee.iitd.ac.in/" target="_blank">Dept. of EE</a>, IIT Delhi. 
+					I have completed my thesis under <a href="https://sites.google.com/site/arpanchattop/home" target="_blank">Prof. Arpan Chattopadhyay</a> in areas of Reinforcement Learning and Multi-Armed Bandits which was selected for the <b>Best BTech Project Award</b>. 
+					Alongside my major, I have also completed a Specialization in Cognitive and Intelligent Systems (AI Focus Area) in the <a href="https://ee.iitd.ac.in/" target="_blank">Dept. of EE</a>, IIT Delhi. 
 					Currently, I am working as a Research Intern at <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-india/" target="_blank">Microsoft Research India</a> under <a href="https://www.microsoft.com/en-us/research/people/gauravsinha/" target="_blank">Gaurav Sinha</a>. At MSRI, I am working in Reinforcement Learning in Large Action Spaces. </p>
 					<p>
 					Before joining MSRI, I spent 3 wonderful months as a Research Assistant in the <i>Approximation Algorithms Lab</i> led by Prof <a href="https://www.csa.iisc.ac.in/~barman/" target="_blank">Siddharth Barman</a> at the <a href="https://www.csa.iisc.ac.in/" target="_blank">Dept. of CSA</a>, IISc Bangalore, where I worked in Participatory Budgeting with Bandit Feedback.  
 				  </p>
 				  <p>
-					I am planning to apply for PhD positions starting from Fall 2024.
-					My research interest spans theoretical and applied areas in Reinforcement Learning, Multi-Armed Bandits and Online Learning. 
-					I am also interested in other areas involving Applied Probability, Algorithms and Optimization. 
+					My research interest spans theoretical and applied areas in Decision-Making Under Uncertainty and High Dimensional Probability. 
+					I am also interested in other areas involving probability, algorithms and optimization. 
 					My broader research motivation is to understand the interaction of several agents and study emergent intelligent behaviours from simpler systems. 
 					Using these insights, I want to design agents that can learn in ways similar to humans, that is, agents that rely on abstraction and are data-efficient.
 				  </p>
 				  <p>
-					I am also working with <a href="https://souradip-chakraborty.github.io/" target="_blank">Souradip Chakroborty</a> from <a href="https://www.umd.edu/">University of Maryland</a> in the area of Model Based Reinforcement Learning. 
+					I am also working with <a href="https://souradip-chakraborty.github.io/" target="_blank">Souradip Chakroborty</a> from <a href="https://www.umd.edu/">University of Maryland</a> in the area of Reinforcement Learning with Human Feedback. 
 					Before that, I have also worked with <a href="https://www.cse.iitd.ac.in/~rahulgarg/" target="_blank">Prof. Rahul Garg</a>, CSE, IIT Delhi in the area of computer vision.
 				  </p>
 				  <p style="text-align:center">
-					<a href="mailto:rocketnirjhardas@gmail.com">Email</a> &nbsp/&nbsp
+					<a href="mailto:nirjhar.das@alumni.iitd.ac.in">Email</a> &nbsp/&nbsp
 					<a href="data/CV.pdf" target="_blank">CV</a> &nbsp/&nbsp
 					<a href="https://scholar.google.com/citations?hl=en&user=Zf3YrgYAAAAJ" target="_blank">Google Scholar</a> &nbsp/&nbsp
 					<a href="https://www.linkedin.com/in/nirjhar-das-874596195" target="_blank">Linkedin</a> &nbsp/&nbsp
@@ -114,6 +113,7 @@
 			<p>
             <div style="width:100%;overflow-y:scroll; height:170px;">
                 <ul id="news">
+					<li>December 2023: I presented (<a href=data/irl-cr-slides.pdf target="_blank">slides</a>) our work <a href="https://arxiv.org/abs/2305.08130" target="_blank">Inverse Reinforcement Learning with Constraint Recovery</a> at the <a href="https://www.easychair.org/cfp/PReMI-23" target="_blank">10th International Conference on Pattern Recognition and Machine Intelligence (PReMI)</a> 2023 </li>
 					<li>August 2023: I started as a Research Intern at <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-india/" target="_blank">MSR India</a></li>
 					<li>August 2023: I received the <a href="https://alumni.iitd.ac.in/scholarships-awards/346" target="_blank">Rajiv Bambawale Cash Prize</a> for the <i>Best BTech Project</i> in the Dept of EE, IIT Delhi.</li>
 					<li>July 2023: I am attending COLT 2023. Would love to meet and discuss about RL, Bandits, Online Learning and Algorithms in general.</li>
@@ -156,7 +156,7 @@
             <td style="padding:0px">
               <br>
               <p style="text-align:left;font-size:small;">
-                  Updated on: 2nd September, 2023
+                  Updated on: 16th December, 2023
     
               <span style="float:right;">
                 Merci, <a href="https://jonbarron.info/" target="_blank">Jon Barron</a>!
