@@ -79,12 +79,12 @@ html body{
 }
 html.dark-mode body{
 	background-color: #222;
-	color: #fff;
+	color: #ffffff97;
 }
 
 html.dark-mode header {
 	background-color: #111;
-	color: #fff;
+	color: #ffffff97;
 }
 
 html.dark-mode a{
