@@ -71,6 +71,79 @@
     
             </tr>
             <br>
+            <td width="15%" valign="center" align="center"><img src="images/APO.png" alt="nthu" width="400" height="180"></td>
+            </td>
+            <td width="85%" style="padding:20px;vertical-align:middle">
+                  <!-- <a class="tog" href="#irl-cr-2023">
+                    
+                  </a> -->
+                  <papertitle><h3>Provably Sample Efficient RLHF via Active Preference Optimization</h3></papertitle>
+                  <br>
+                  <strong>Nirjhar Das</strong>, <a href="https://souradip-chakraborty.github.io/" target="_blank">Souradip Chakroborty</a>, <a href="https://www.aldopacchiano.ai/" target="_blank">Aldo Pacchiano</a> and <a href="https://sites.google.com/view/sayakraychowdhury/home" target="_blank">Sayak Ray Chowdhury</a>
+                  <br>
+                  <p></p>
+                  <em> (Under Review)</em>
+                  <div class="paper" id="apo-2024">
+                    <a href="https://drive.google.com/file/d/1VGyrOzrhXU2_pn_5vwq_AQSlkDHMq_fy/view?usp=sharing" target="_blank">paper</a> /
+                      <a class="tog" href="javascript:toggleblock('app_abs_apo-24')">abstract</a> / 
+                      <a class="tog" href="javascript:toggleblock('app_bib_apo-24')">bibtex</a>
+                      <p align="justify">
+                        <i id="app_abs_apo-24">
+                          Reinforcement Learning from Human Feedback (RLHF) is pivotal in aligning Large Language Models (LLMs) with human preferences. While these aligned generative models have demonstrated impressive capabilities across various tasks, the dependence on high-quality human preference data poses a costly bottleneck in practical implementation of RLHF. Hence better and adaptive strategies for data collection is needed. To this end, we frame RLHF as a contextual preference bandit problem with prompts as contexts and show that the naive way of collecting preference data by choosing prompts uniformly at random leads to a policy that suffers an $\Omega(1)$ suboptimality gap in rewards. Then we propose $\textit{Active Preference Optimization}$ ($\texttt{APO}$), an algorithm that actively selects prompts to collect preference data. Under the Bradley-Terry-Luce (BTL) preference model, $\texttt{APO}$ achieves sample efficiency without compromising on policy performance. We show that given a sample budget of $T$, the suboptimality gap of a policy learned via $\texttt{APO}$ scales as $O(1/\sqrt{T})$. Next, we propose a compute-efficient batch version of $\texttt{APO}$ with minor modification and evaluate its performance in practice. Experimental evaluations on a human preference dataset validate $\texttt{APO}$'s efficacy as a sample-efficient and practical solution to data collection for RLHF, facilitating alignment of LLMs with human preferences in a cost-effective and scalable manner.
+                        </i>
+                      </p>
+                      <bibtext xml:space="preserve" id="app_bib_apo-24">
+                        @InProceedings{das2024provably, </br>
+                          author="Das, Nirjhar,
+                          Chakroborty, Souradip,
+                          Pacchiano, Aldo,
+                          Chowdhury, Sayak Ray", </br>
+                          title="Provably Sample Efficient RLHF via Active Preference Optimization",</br>
+                          year="2024" </br>
+                        }
+                        </bibtext>
+                    </div>              
+                    <script language="JavaScript">hideblock('app_bib_apo-24');hideblock('app_abs_apo-24');</script>
+            </td>
+            </tr>
+
+            <td width="15%" valign="center" align="center"><img src="images/multi-armed-bandits.jpeg" alt="nthu" width="200" height="150"></td>
+            </td>
+            <td width="85%" style="padding:20px;vertical-align:middle">
+                  <!-- <a class="tog" href="#irl-cr-2023">
+                    
+                  </a> -->
+                  <papertitle><h3>Optimal Regret  with Limited Adaptivity for Generalized Linear Contextual Bandits</h3></papertitle>
+                  <br>
+                  <a href="https://sawarniayush.github.io/" target="_blank">Ayush Sawarni</a>, <strong>Nirjhar Das</strong>, <a href="https://www.csa.iisc.ac.in/~barman/" target="_blank">Siddharth Barman</a> and <a href="https://www.microsoft.com/en-us/research/people/gauravsinha/" target="_blank">Gaurav Sinha</a>
+                  <br>
+                  <p></p>
+                  <em> (Under Review)</em>
+                  <div class="paper" id="limited-glin-2024">
+                    <a href="https://drive.google.com/file/d/1tMIS53wuMvEsL2n_MwYUOIcmP5HUfiWy/view?usp=sharing" target="_blank">paper</a> /
+                      <a class="tog" href="javascript:toggleblock('app_abs_limited-glin-24')">abstract</a> / 
+                      <a class="tog" href="javascript:toggleblock('app_bib_limited-glin-24')">bibtex</a>
+                      <p align="justify">
+                        <i id="app_abs_limited-glin-24">
+                          We study the generalized linear contextual bandit problem within the requirements of limited adaptivity.  In this paper, we present two algorithms, $\texttt{B-GLinCB}$ and $\texttt{RS-GLinCB}$, that address, respectively, two prevalent limited adaptivity models: batch learning with stochastic contexts and rare policy switches with adversarial contexts. For both these models, we  establish essentially tight regret bounds. Notably, in the obtained bounds, we manage to eliminate a dependence  on a key parameter $\kappa$, which captures the non-linearity of  the underlying reward model. For our batch learning algorithm $\texttt{B-GLinCB}$, with $\Omega\left( \log{\log T} \right)$ batches, the regret scales as $\tilde{O}(\sqrt{T})$. Further, we establish that our rarely switching algorithm $\texttt{RS-GLinCB}$\ updates its policy at most $\tilde{O}(\log^2 T)$ times and achieves a regret of $\tilde{O}(\sqrt{T})$. Our approach for removing the dependence on $\kappa$ for generalized linear 
+                          contextual bandits might be of independent interest.
+                        </i>
+                      </p>
+                      <bibtext xml:space="preserve" id="app_bib_limited-glin-24">
+                        @InProceedings{sawarni2024optimal, </br>
+                          author="Sawarni, Ayush,
+                          Das, Nirjhar,
+                          Barman, Siddharth,
+                          and Sinha, Gaurav", </br>
+                          title="Optimal Regret  with Limited Adaptivity for Generalized Linear Contextual Bandits",</br>
+                          year="2023", </br>
+                        }
+                        </bibtext>
+                    </div>              
+                    <script language="JavaScript">hideblock('app_bib_limited-glin-24');hideblock('app_abs_limited-glin-24');</script>
+            </td>
+            </tr>
+
             <td width="15%" valign="center" align="center"><img src="images/const-irl.png" alt="nthu" width="300" height="240"></td>
             </td>
             <td width="85%" style="padding:20px;vertical-align:middle">
