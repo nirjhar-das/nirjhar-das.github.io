@@ -71,39 +71,37 @@
     
             </tr>
             <br>
-            <td width="15%" valign="center" align="center"><img src="images/APO.png" alt="nthu" width="400" height="180"></td>
+            <td width="15%" valign="center" align="center"><img src="images/HyLinUCB.png" alt="nthu" width="300" height="180"></td>
             </td>
             <td width="85%" style="padding:20px;vertical-align:middle">
                   <!-- <a class="tog" href="#irl-cr-2023">
                     
                   </a> -->
-                  <papertitle><h3>Provably Sample Efficient RLHF via Active Preference Optimization</h3></papertitle>
+                  <papertitle><h3>Linear Contextual Bandits with Hybrid Payoffs: Revisited</h3></papertitle>
                   <br>
-                  <strong>Nirjhar Das</strong>, <a href="https://souradip-chakraborty.github.io/" target="_blank">Souradip Chakroborty</a>, <a href="https://www.aldopacchiano.ai/" target="_blank">Aldo Pacchiano</a> and <a href="https://sites.google.com/view/sayakraychowdhury/home" target="_blank">Sayak Ray Chowdhury</a>
+                  <strong>Nirjhar Das</strong> and <a href="https://www.microsoft.com/en-us/research/people/gauravsinha/" target="_blank">Gaurav Sinha</a>
                   <br>
                   <p></p>
                   <em> (Under Review)</em>
-                  <div class="paper" id="apo-2024">
-                    <a href="https://drive.google.com/file/d/1VGyrOzrhXU2_pn_5vwq_AQSlkDHMq_fy/view?usp=sharing" target="_blank">paper</a> /
-                      <a class="tog" href="javascript:toggleblock('app_abs_apo-24')">abstract</a> / 
-                      <a class="tog" href="javascript:toggleblock('app_bib_apo-24')">bibtex</a>
+                  <div class="paper" id="hylinucb-2024">
+                    <a href="https://drive.google.com/file/d/1WBSkGySeW7t7uCaWlMlLVM3gqK4YQEhs/view?usp=sharing" target="_blank">paper</a> /
+                      <a class="tog" href="javascript:toggleblock('app_abs_hylinucb-24')">abstract</a> / 
+                      <a class="tog" href="javascript:toggleblock('app_bib_hylinucb-24')">bibtex</a>
                       <p align="justify">
-                        <i id="app_abs_apo-24">
-                          Reinforcement Learning from Human Feedback (RLHF) is pivotal in aligning Large Language Models (LLMs) with human preferences. While these aligned generative models have demonstrated impressive capabilities across various tasks, the dependence on high-quality human preference data poses a costly bottleneck in practical implementation of RLHF. Hence better and adaptive strategies for data collection is needed. To this end, we frame RLHF as a contextual preference bandit problem with prompts as contexts and show that the naive way of collecting preference data by choosing prompts uniformly at random leads to a policy that suffers an $\Omega(1)$ suboptimality gap in rewards. Then we propose $\textit{Active Preference Optimization}$ ($\texttt{APO}$), an algorithm that actively selects prompts to collect preference data. Under the Bradley-Terry-Luce (BTL) preference model, $\texttt{APO}$ achieves sample efficiency without compromising on policy performance. We show that given a sample budget of $T$, the suboptimality gap of a policy learned via $\texttt{APO}$ scales as $O(1/\sqrt{T})$. Next, we propose a compute-efficient batch version of $\texttt{APO}$ with minor modification and evaluate its performance in practice. Experimental evaluations on a human preference dataset validate $\texttt{APO}$'s efficacy as a sample-efficient and practical solution to data collection for RLHF, facilitating alignment of LLMs with human preferences in a cost-effective and scalable manner.
+                        <i id="app_abs_hylinucb-24">
+                          We study the Linear Contextual Bandit ($\texttt{LinearCB}$) problem in the hybrid reward setting. In this setting, every arm's reward model contains arm specific parameters in addition to parameters shared across the reward models of all the arms. We can easily reduce this setting to two closely related settings; (a) <i>Shared</i> - no arm specific parameters, and (b) <i>Disjoint</i> - only arm specific parameters, enabling the application of two popular state of the art algorithms - $\texttt{LinUCB}$ and $\texttt{DisLinUCB}$ (proposed as Algorithm $1$ in Li et al. 2010). When the arm features are stochastic and satisfy a popular diversity condition, we provide new regret analyses for both $\texttt{LinUCB}$ and $\texttt{DisLinUCB}$ that significantly improves upon the known regret guarantees of these algorithms. Our novel analysis critically exploits the structure of the hybrid rewards and diversity of the arm features. Along with proving these new guarantees, we  introduce a new algorithm $\texttt{HyLinUCB}$ that crucially modifies $\texttt{LinUCB}$ (using a new exploration coefficient) to account for sparsity in the hybrid setting. Under the same diversity assumptions, we prove that at the end of $T$ rounds, $\texttt{HyLinUCB}$ also incurs only $\tilde{O}(\sqrt{T})$ regret. We perform extensive experiments on synthetic and real-world datasets demonstrating strong empirical performance of $\texttt{HyLinUCB}$. When the number of arm specific parameters is much larger than the number of shared parameters, we observe that $\texttt{DisLinUCB}$ incurs the lowest regret. In this case, regret of $\texttt{HyLinUCB}$ is the second best and it is extremely competitive to \DisLinUCB. In all other situations, including our real-world dataset, $\texttt{HyLinUCB}$ has significantly lower regret than $\texttt{LinUCB}$, $\texttt{DisLinUCB}$ and other state of the art baselines we considered. We also empirically observe that the regret of $\texttt{HyLinUCB}$ grows much slower with the number of arms $K$, compared to baselines, making it suitable even for very large action spaces.
                         </i>
                       </p>
-                      <bibtext xml:space="preserve" id="app_bib_apo-24">
-                        @InProceedings{das2024provably, </br>
+                      <bibtext xml:space="preserve" id="app_bib_hylinucb-24">
+                        @InProceedings{das2024linear, </br>
                           author="Das, Nirjhar,
-                          Chakroborty, Souradip,
-                          Pacchiano, Aldo,
-                          Chowdhury, Sayak Ray", </br>
-                          title="Provably Sample Efficient RLHF via Active Preference Optimization",</br>
+                          Sinha, Gaurav", </br>
+                          title="Linear Contextual Bandits with Hybrid Payoffs: Revisited",</br>
                           year="2024" </br>
                         }
                         </bibtext>
                     </div>              
-                    <script language="JavaScript">hideblock('app_bib_apo-24');hideblock('app_abs_apo-24');</script>
+                    <script language="JavaScript">hideblock('app_bib_hylinucb-24');hideblock('app_abs_hylinucb-24');</script>
             </td>
             </tr>
 
@@ -120,7 +118,7 @@
                   <p></p>
                   <em> (Under Review)</em>
                   <div class="paper" id="limited-glin-2024">
-                    <a href="https://drive.google.com/file/d/1tMIS53wuMvEsL2n_MwYUOIcmP5HUfiWy/view?usp=sharing" target="_blank">paper</a> /
+                    <a href="https://arxiv.org/abs/2404.06831" target="_blank">paper</a> /
                       <a class="tog" href="javascript:toggleblock('app_abs_limited-glin-24')">abstract</a> / 
                       <a class="tog" href="javascript:toggleblock('app_bib_limited-glin-24')">bibtex</a>
                       <p align="justify">
@@ -144,6 +142,41 @@
             </td>
             </tr>
 
+            <td width="15%" valign="center" align="center"><img src="images/APO.png" alt="nthu" width="400" height="180"></td>
+            </td>
+            <td width="85%" style="padding:20px;vertical-align:middle">
+                  <!-- <a class="tog" href="#irl-cr-2023">
+                    
+                  </a> -->
+                  <papertitle><h3>Provably Sample Efficient RLHF via Active Preference Optimization</h3></papertitle>
+                  <br>
+                  <strong>Nirjhar Das</strong>, <a href="https://souradip-chakraborty.github.io/" target="_blank">Souradip Chakroborty</a>, <a href="https://www.aldopacchiano.ai/" target="_blank">Aldo Pacchiano</a> and <a href="https://sites.google.com/view/sayakraychowdhury/home" target="_blank">Sayak Ray Chowdhury</a>
+                  <br>
+                  <p></p>
+                  <em> (Under Review)</em>
+                  <div class="paper" id="apo-2024">
+                    <a href="https://arxiv.org/abs/2402.10500" target="_blank">paper</a> /
+                      <a class="tog" href="javascript:toggleblock('app_abs_apo-24')">abstract</a> / 
+                      <a class="tog" href="javascript:toggleblock('app_bib_apo-24')">bibtex</a>
+                      <p align="justify">
+                        <i id="app_abs_apo-24">
+                          Reinforcement Learning from Human Feedback (RLHF) is pivotal in aligning Large Language Models (LLMs) with human preferences. While these aligned generative models have demonstrated impressive capabilities across various tasks, the dependence on high-quality human preference data poses a costly bottleneck in practical implementation of RLHF. Hence better and adaptive strategies for data collection is needed. To this end, we frame RLHF as a contextual preference bandit problem with prompts as contexts and show that the naive way of collecting preference data by choosing prompts uniformly at random leads to a policy that suffers an $\Omega(1)$ suboptimality gap in rewards. Then we propose $\textit{Active Preference Optimization}$ ($\texttt{APO}$), an algorithm that actively selects prompts to collect preference data. Under the Bradley-Terry-Luce (BTL) preference model, $\texttt{APO}$ achieves sample efficiency without compromising on policy performance. We show that given a sample budget of $T$, the suboptimality gap of a policy learned via $\texttt{APO}$ scales as $O(1/\sqrt{T})$. Next, we propose a compute-efficient batch version of $\texttt{APO}$ with minor modification and evaluate its performance in practice. Experimental evaluations on a human preference dataset validate $\texttt{APO}$'s efficacy as a sample-efficient and practical solution to data collection for RLHF, facilitating alignment of LLMs with human preferences in a cost-effective and scalable manner.
+                        </i>
+                      </p>
+                      <bibtext xml:space="preserve" id="app_bib_apo-24">
+                        @InProceedings{das2024provably, </br>
+                          author="Das, Nirjhar,
+                          Chakroborty, Souradip,
+                          Pacchiano, Aldo,
+                          Chowdhury, Sayak Ray", </br>
+                          title="Provably Sample Efficient RLHF via Active Preference Optimization",</br>
+                          year="2024" </br>
+                        }
+                        </bibtext>
+                    </div>              
+                    <script language="JavaScript">hideblock('app_bib_apo-24');hideblock('app_abs_apo-24');</script>
+            </td>
+          </tr>
             <td width="15%" valign="center" align="center"><img src="images/const-irl.png" alt="nthu" width="300" height="240"></td>
             </td>
             <td width="85%" style="padding:20px;vertical-align:middle">
