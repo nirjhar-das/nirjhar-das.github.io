@@ -82,9 +82,9 @@
                   <strong>Nirjhar Das</strong> and <a href="https://www.microsoft.com/en-us/research/people/gauravsinha/" target="_blank">Gaurav Sinha</a>
                   <br>
                   <p></p>
-                  <em> (Under Review)</em>
+                  <em> Accepted at ECML-PKDD 2024</em>
                   <div class="paper" id="hylinucb-2024">
-                    <a href="https://drive.google.com/file/d/1WBSkGySeW7t7uCaWlMlLVM3gqK4YQEhs/view?usp=sharing" target="_blank">paper</a> /
+                    <a href="https://arxiv.org/abs/2406.10131" target="_blank">paper</a> /
                       <a class="tog" href="javascript:toggleblock('app_abs_hylinucb-24')">abstract</a> / 
                       <a class="tog" href="javascript:toggleblock('app_bib_hylinucb-24')">bibtex</a>
                       <p align="justify">
@@ -97,6 +97,7 @@
                           author="Das, Nirjhar,
                           Sinha, Gaurav", </br>
                           title="Linear Contextual Bandits with Hybrid Payoffs: Revisited",</br>
+                          booktitle="European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases", </br>
                           year="2024" </br>
                         }
                         </bibtext>
@@ -111,7 +112,7 @@
                   <!-- <a class="tog" href="#irl-cr-2023">
                     
                   </a> -->
-                  <papertitle><h3>Optimal Regret  with Limited Adaptivity for Generalized Linear Contextual Bandits</h3></papertitle>
+                  <papertitle><h3>Generalized Linear Contextual Bandits with Limited Adaptivity</h3></papertitle>
                   <br>
                   <a href="https://sawarniayush.github.io/" target="_blank">Ayush Sawarni</a>, <strong>Nirjhar Das</strong>, <a href="https://www.csa.iisc.ac.in/~barman/" target="_blank">Siddharth Barman</a> and <a href="https://www.microsoft.com/en-us/research/people/gauravsinha/" target="_blank">Gaurav Sinha</a>
                   <br>
@@ -128,13 +129,14 @@
                         </i>
                       </p>
                       <bibtext xml:space="preserve" id="app_bib_limited-glin-24">
-                        @InProceedings{sawarni2024optimal, </br>
+                        @article{sawarni2024optimal, </br>
                           author="Sawarni, Ayush,
                           Das, Nirjhar,
                           Barman, Siddharth,
                           and Sinha, Gaurav", </br>
-                          title="Optimal Regret  with Limited Adaptivity for Generalized Linear Contextual Bandits",</br>
-                          year="2023", </br>
+                          title="Generalized Linear Contextual Bandits with Limited Adaptivity",</br>
+                          journal="arXiv preprint arXiv:2404.06831", </br>
+                          year="2024", </br>
                         }
                         </bibtext>
                     </div>              
@@ -148,7 +150,7 @@
                   <!-- <a class="tog" href="#irl-cr-2023">
                     
                   </a> -->
-                  <papertitle><h3>Provably Sample Efficient RLHF via Active Preference Optimization</h3></papertitle>
+                  <papertitle><h3>Active Preference Optimization for Sample Efficient RLHF</h3></papertitle>
                   <br>
                   <strong>Nirjhar Das</strong>, <a href="https://souradip-chakraborty.github.io/" target="_blank">Souradip Chakroborty</a>, <a href="https://www.aldopacchiano.ai/" target="_blank">Aldo Pacchiano</a> and <a href="https://sites.google.com/view/sayakraychowdhury/home" target="_blank">Sayak Ray Chowdhury</a>
                   <br>
@@ -160,16 +162,17 @@
                       <a class="tog" href="javascript:toggleblock('app_bib_apo-24')">bibtex</a>
                       <p align="justify">
                         <i id="app_abs_apo-24">
-                          Reinforcement Learning from Human Feedback (RLHF) is pivotal in aligning Large Language Models (LLMs) with human preferences. While these aligned generative models have demonstrated impressive capabilities across various tasks, the dependence on high-quality human preference data poses a costly bottleneck in practical implementation of RLHF. Hence better and adaptive strategies for data collection is needed. To this end, we frame RLHF as a contextual preference bandit problem with prompts as contexts and show that the naive way of collecting preference data by choosing prompts uniformly at random leads to a policy that suffers an $\Omega(1)$ suboptimality gap in rewards. Then we propose $\textit{Active Preference Optimization}$ ($\texttt{APO}$), an algorithm that actively selects prompts to collect preference data. Under the Bradley-Terry-Luce (BTL) preference model, $\texttt{APO}$ achieves sample efficiency without compromising on policy performance. We show that given a sample budget of $T$, the suboptimality gap of a policy learned via $\texttt{APO}$ scales as $O(1/\sqrt{T})$. Next, we propose a compute-efficient batch version of $\texttt{APO}$ with minor modification and evaluate its performance in practice. Experimental evaluations on a human preference dataset validate $\texttt{APO}$'s efficacy as a sample-efficient and practical solution to data collection for RLHF, facilitating alignment of LLMs with human preferences in a cost-effective and scalable manner.
+                          Reinforcement Learning from Human Feedback (RLHF) is pivotal in aligning Large Language Models (LLMs) with human preferences. Although aligned generative models have shown remarkable abilities in numerous tasks, their reliance on high-quality human preference data creates a costly bottleneck in the practical application of RLHF. One primary reason is that the current methods rely on uniformly picking prompt-generation pairs from a dataset of prompt-generations, to collect human feedback, thereby resulting in sub-optimal alignment under a constrained budget, which highlights the criticality of adaptive strategies in efficient alignment. Recent works [Mehta et al. 2023, Muldrew et al. 2024] have tried to address this problem by designing various heuristics based on generation uncertainty. However, either the assumptions in [Mehta et al. 2023] are restrictive, or [Muldrew et al. 2024] do not provide any rigorous theoretical guarantee. To address these, we reformulate RLHF within the contextual preference bandit framework, treating prompts as contexts, and develop an active-learning algorithm, $\textit{Active Preference Optimization}$ ($\texttt{APO}$), which significantly enhances model alignment by querying preference data from the most important samples, thus achieving superior performance at a small sample budget. We analyze the theoretical performance guarantees of $\texttt{APO}$ under the Bradley-Terry-Luce (BTL) preference model showing that the suboptimality gap of the policy learned via $\texttt{APO}$ scales as $O(1/\sqrt{T})$ for a sample budget of $T$. We also show that collecting preference data by choosing prompts uniformly at random leads to a policy that suffers a constant sub-optimality. We perform detailed experimental evaluations on practical preference datasets to validate \texttt{APO}'s efficacy over the existing methods, establishing it as a sample-efficient and practical solution of alignment in a cost-effective and scalable manner.
                         </i>
                       </p>
                       <bibtext xml:space="preserve" id="app_bib_apo-24">
-                        @InProceedings{das2024provably, </br>
+                        @article{das2024active, </br>
                           author="Das, Nirjhar,
                           Chakroborty, Souradip,
                           Pacchiano, Aldo,
                           Chowdhury, Sayak Ray", </br>
-                          title="Provably Sample Efficient RLHF via Active Preference Optimization",</br>
+                          title="Active Preference Optimization for Sample Efficient RLHF",</br>
+                          journal="arXiv preprint arXiv:2402.10500", </br>
                           year="2024" </br>
                         }
                         </bibtext>
