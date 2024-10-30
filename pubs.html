@@ -61,8 +61,8 @@
 		    <br>
             <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
                 <tr>
-                <td style="padding:20px;width:100%;vertical-align:middle">
-                  <heading><center>Publication</center></heading>
+                <td style="padding:10px;width:100%;vertical-align:middle;text-align: left;">
+                  <heading>Publications & Preprints</heading>
                   <!--<br />*indicates equal contribution -->
                 </td>
               </tr>
@@ -70,91 +70,67 @@
             <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
     
             </tr>
-            <br>
-            <td width="15%" valign="center" align="center"><img src="images/HyLinUCB.png" alt="nthu" width="300" height="180"></td>
-            </td>
-            <td width="85%" style="padding:20px;vertical-align:middle">
-                  <!-- <a class="tog" href="#irl-cr-2023">
-                    
-                  </a> -->
+            <!-- <br> -->
+            <!-- <td width="15%" valign="center" align="center"><img src="images/HyLinUCB.png" alt="nthu" width="300" height="180"></td>
+            </td> -->
+            <div style="padding: 10px;">
+
+              <div style="line-height: 1.6;">
                   <papertitle><h3>Linear Contextual Bandits with Hybrid Payoffs: Revisited</h3></papertitle>
-                  <br>
-                  <strong>Nirjhar Das</strong> and Gaurav Sinha
-                  <br>
-                  <p></p>
-                  <em> Accepted at ECML-PKDD 2024</em>
+                  <strong>Nirjhar Das</strong> and Gaurav Sinha<br/>
+                  <em>Accepted at ECML-PKDD 2024</em>
                   <div class="paper" id="hylinucb-2024">
-                    <a href="https://arxiv.org/abs/2406.10131" target="_blank">paper</a> /
+                      <a href="https://arxiv.org/abs/2406.10131" target="_blank">paper</a> /
                       <a class="tog" href="javascript:toggleblock('app_abs_hylinucb-24')">abstract</a> / 
                       <a class="tog" href="javascript:toggleblock('app_bib_hylinucb-24')">bibtex</a>
                       <p align="justify">
-                        <i id="app_abs_hylinucb-24">
-                          We study the Linear Contextual Bandit ($\texttt{LinearCB}$) problem in the hybrid reward setting. In this setting, every arm's reward model contains arm specific parameters in addition to parameters shared across the reward models of all the arms. We can easily reduce this setting to two closely related settings; (a) <i>Shared</i> - no arm specific parameters, and (b) <i>Disjoint</i> - only arm specific parameters, enabling the application of two popular state of the art algorithms - $\texttt{LinUCB}$ and $\texttt{DisLinUCB}$ (proposed as Algorithm $1$ in Li et al. 2010). When the arm features are stochastic and satisfy a popular diversity condition, we provide new regret analyses for both $\texttt{LinUCB}$ and $\texttt{DisLinUCB}$ that significantly improves upon the known regret guarantees of these algorithms. Our novel analysis critically exploits the structure of the hybrid rewards and diversity of the arm features. Along with proving these new guarantees, we  introduce a new algorithm $\texttt{HyLinUCB}$ that crucially modifies $\texttt{LinUCB}$ (using a new exploration coefficient) to account for sparsity in the hybrid setting. Under the same diversity assumptions, we prove that at the end of $T$ rounds, $\texttt{HyLinUCB}$ also incurs only $\tilde{O}(\sqrt{T})$ regret. We perform extensive experiments on synthetic and real-world datasets demonstrating strong empirical performance of $\texttt{HyLinUCB}$. When the number of arm specific parameters is much larger than the number of shared parameters, we observe that $\texttt{DisLinUCB}$ incurs the lowest regret. In this case, regret of $\texttt{HyLinUCB}$ is the second best and it is extremely competitive to \DisLinUCB. In all other situations, including our real-world dataset, $\texttt{HyLinUCB}$ has significantly lower regret than $\texttt{LinUCB}$, $\texttt{DisLinUCB}$ and other state of the art baselines we considered. We also empirically observe that the regret of $\texttt{HyLinUCB}$ grows much slower with the number of arms $K$, compared to baselines, making it suitable even for very large action spaces.
-                        </i>
+                          <i id="app_abs_hylinucb-24">
+                              We study the Linear Contextual Bandit ($\texttt{LinearCB}$) problem in the hybrid reward setting. In this setting, every arm's reward model contains arm specific parameters in addition to parameters shared across the reward models of all the arms. We can easily reduce this setting to two closely related settings; (a) <i>Shared</i> - no arm specific parameters, and (b) <i>Disjoint</i> - only arm specific parameters, enabling the application of two popular state of the art algorithms - $\texttt{LinUCB}$ and $\texttt{DisLinUCB}$ (proposed as Algorithm $1$ in Li et al. 2010). When the arm features are stochastic and satisfy a popular diversity condition, we provide new regret analyses for both $\texttt{LinUCB}$ and $\texttt{DisLinUCB}$ that significantly improves upon the known regret guarantees of these algorithms. Our novel analysis critically exploits the structure of the hybrid rewards and diversity of the arm features. Along with proving these new guarantees, we  introduce a new algorithm $\texttt{HyLinUCB}$ that crucially modifies $\texttt{LinUCB}$ (using a new exploration coefficient) to account for sparsity in the hybrid setting. Under the same diversity assumptions, we prove that at the end of $T$ rounds, $\texttt{HyLinUCB}$ also incurs only $\tilde{O}(\sqrt{T})$ regret. We perform extensive experiments on synthetic and real-world datasets demonstrating strong empirical performance of $\texttt{HyLinUCB}$. When the number of arm specific parameters is much larger than the number of shared parameters, we observe that $\texttt{DisLinUCB}$ incurs the lowest regret. In this case, regret of $\texttt{HyLinUCB}$ is the second best and it is extremely competitive to \DisLinUCB. In all other situations, including our real-world dataset, $\texttt{HyLinUCB}$ has significantly lower regret than $\texttt{LinUCB}$, $\texttt{DisLinUCB}$ and other state of the art baselines we considered. We also empirically observe that the regret of $\texttt{HyLinUCB}$ grows much slower with the number of arms $K$, compared to baselines, making it suitable even for very large action spaces.
+                          </i>
                       </p>
                       <bibtext xml:space="preserve" id="app_bib_hylinucb-24">
-                        @InProceedings{das2024linear, </br>
-                          author="Das, Nirjhar,
-                          Sinha, Gaurav", </br>
-                          title="Linear Contextual Bandits with Hybrid Payoffs: Revisited",</br>
-                          booktitle="European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases", </br>
-                          year="2024" </br>
-                        }
-                        </bibtext>
-                    </div>              
-                    <script language="JavaScript">hideblock('app_bib_hylinucb-24');hideblock('app_abs_hylinucb-24');</script>
-            </td>
-            </tr>
-
-            <td width="15%" valign="center" align="center"><img src="images/multi-armed-bandits.jpeg" alt="nthu" width="200" height="150"></td>
-            </td>
-            <td width="85%" style="padding:20px;vertical-align:middle">
-                  <!-- <a class="tog" href="#irl-cr-2023">
-                    
-                  </a> -->
+                          @InProceedings{das2024linear,<br>
+                          author="Das, Nirjhar, Sinha, Gaurav",<br>
+                          title="Linear Contextual Bandits with Hybrid Payoffs: Revisited",<br>
+                          booktitle="European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases",<br>
+                          year="2024"<br>
+                          }
+                      </bibtext>
+                  </div>
+                  <script language="JavaScript">hideblock('app_bib_hylinucb-24');hideblock('app_abs_hylinucb-24');</script>
+              </div>
+          
+              <hr style="border-top: 1px #cccccc80; margin: 5px 0;">
+          
+              <div style="line-height: 1.6;">
                   <papertitle><h3>Generalized Linear Contextual Bandits with Limited Adaptivity</h3></papertitle>
-                  <br>
-                  Ayush Sawarni, <strong>Nirjhar Das</strong>, Siddharth Barman and Gaurav Sinha
-                  <br>
-                  <p></p>
-                  <em> <span style="color:red">Spotlight</span> at NeurIPS 2024</em>
+                  Ayush Sawarni, <strong>Nirjhar Das</strong>, Siddharth Barman, and Gaurav Sinha<br/>
+                  <em><span style="color:red">Spotlight</span> at NeurIPS 2024</em>
                   <div class="paper" id="limited-glin-2024">
-                    <a href="https://arxiv.org/abs/2404.06831" target="_blank">paper</a> /
+                      <a href="https://arxiv.org/abs/2404.06831" target="_blank">paper</a> /
                       <a class="tog" href="javascript:toggleblock('app_abs_limited-glin-24')">abstract</a> / 
                       <a class="tog" href="javascript:toggleblock('app_bib_limited-glin-24')">bibtex</a>
                       <p align="justify">
-                        <i id="app_abs_limited-glin-24">
-                          We study the generalized linear contextual bandit problem within the requirements of limited adaptivity.  In this paper, we present two algorithms, $\texttt{B-GLinCB}$ and $\texttt{RS-GLinCB}$, that address, respectively, two prevalent limited adaptivity models: batch learning with stochastic contexts and rare policy switches with adversarial contexts. For both these models, we  establish essentially tight regret bounds. Notably, in the obtained bounds, we manage to eliminate a dependence  on a key parameter $\kappa$, which captures the non-linearity of  the underlying reward model. For our batch learning algorithm $\texttt{B-GLinCB}$, with $\Omega\left( \log{\log T} \right)$ batches, the regret scales as $\tilde{O}(\sqrt{T})$. Further, we establish that our rarely switching algorithm $\texttt{RS-GLinCB}$\ updates its policy at most $\tilde{O}(\log^2 T)$ times and achieves a regret of $\tilde{O}(\sqrt{T})$. Our approach for removing the dependence on $\kappa$ for generalized linear 
-                          contextual bandits might be of independent interest.
-                        </i>
+                          <i id="app_abs_limited-glin-24">
+                            We study the generalized linear contextual bandit problem within the requirements of limited adaptivity.  In this paper, we present two algorithms, $\texttt{B-GLinCB}$ and $\texttt{RS-GLinCB}$, that address, respectively, two prevalent limited adaptivity models: batch learning with stochastic contexts and rare policy switches with adversarial contexts. For both these models, we  establish essentially tight regret bounds. Notably, in the obtained bounds, we manage to eliminate a dependence  on a key parameter $\kappa$, which captures the non-linearity of  the underlying reward model. For our batch learning algorithm $\texttt{B-GLinCB}$, with $\Omega\left( \log{\log T} \right)$ batches, the regret scales as $\tilde{O}(\sqrt{T})$. Further, we establish that our rarely switching algorithm $\texttt{RS-GLinCB}$\ updates its policy at most $\tilde{O}(\log^2 T)$ times and achieves a regret of $\tilde{O}(\sqrt{T})$. Our approach for removing the dependence on $\kappa$ for generalized linear 
+                            contextual bandits might be of independent interest.
+                          </i>
                       </p>
                       <bibtext xml:space="preserve" id="app_bib_limited-glin-24">
-                        @article{sawarni2024optimal, </br>
-                          author="Sawarni, Ayush,
-                          Das, Nirjhar,
-                          Barman, Siddharth,
-                          and Sinha, Gaurav", </br>
-                          title="Generalized Linear Contextual Bandits with Limited Adaptivity",</br>
-                          journal="arXiv preprint arXiv:2404.06831", </br>
-                          year="2024", </br>
-                        }
-                        </bibtext>
-                    </div>              
-                    <script language="JavaScript">hideblock('app_bib_limited-glin-24');hideblock('app_abs_limited-glin-24');</script>
-            </td>
-            </tr>
-
-            <td width="15%" valign="center" align="center"><img src="images/APO.png" alt="nthu" width="400" height="180"></td>
-            </td>
-            <td width="85%" style="padding:20px;vertical-align:middle">
-                  <!-- <a class="tog" href="#irl-cr-2023">
-                    
-                  </a> -->
-                  <papertitle><h3>Active Preference Optimization for Sample Efficient RLHF</h3></papertitle>
-                  <br>
-                  <strong>Nirjhar Das</strong>, Souradip Chakroborty, Aldo Pacchiano and Sayak Ray Chowdhury
-                  <br>
-                  <p></p>
+                          @article{sawarni2024optimal,<br>
+                          author="Sawarni, Ayush, Das, Nirjhar, Barman, Siddharth, and Sinha, Gaurav",<br>
+                          title="Generalized Linear Contextual Bandits with Limited Adaptivity",<br>
+                          journal="arXiv preprint arXiv:2404.06831",<br>
+                          year="2024",<br>
+                          }
+                      </bibtext>
+                  </div>
+                  <script language="JavaScript">hideblock('app_bib_limited-glin-24');hideblock('app_abs_limited-glin-24');</script>
+              </div>
+              <hr style="border-top: 1px #cccccc80; margin: 5px 0;">
+              <div style="line-height: 1.6;">
+                <papertitle><h3>Active Preference Optimization for Sample Efficient RLHF</h3></papertitle>
+                  <strong>Nirjhar Das</strong>, Souradip Chakroborty, Aldo Pacchiano and Sayak Ray Chowdhury<br/>
                   <em> Accepted at ICML 2024 Workshop on Theoretical Foundations of Foundation Models</em>
                   <div class="paper" id="apo-2024">
                     <a href="https://arxiv.org/abs/2402.10500" target="_blank">paper</a> /
@@ -178,19 +154,11 @@
                         </bibtext>
                     </div>              
                     <script language="JavaScript">hideblock('app_bib_apo-24');hideblock('app_abs_apo-24');</script>
-            </td>
-          </tr>
-            <td width="15%" valign="center" align="center"><img src="images/const-irl.png" alt="nthu" width="300" height="240"></td>
-            </td>
-            <td width="85%" style="padding:20px;vertical-align:middle">
-                  <!-- <a class="tog" href="#irl-cr-2023">
-                    
-                  </a> -->
-                  <papertitle><h3>Inverse Reinforcement Learning With Constraint Recovery</h3></papertitle>
-                  <br>
-                  <strong>Nirjhar Das</strong> and Arpan Chattopadhyay
-                  <br>
-                  <p></p>
+              </div>
+              <hr style="border-top: 1px #cccccc80; margin: 5px 0;">
+              <div style="line-height: 1.6;">
+                <papertitle><h3>Inverse Reinforcement Learning With Constraint Recovery</h3></papertitle>
+                  <strong>Nirjhar Das</strong> and Arpan Chattopadhyay<br/>
                   <em> <span style="color:red">Best Paper Award</span> at <a href="https://link.springer.com/book/10.1007/978-3-031-45170-6" target="_blank">10th International Conference on Pattern Recognition and Machine Intelligence (PReMI)</a> 2023&emsp14;</em>
                   <div class="paper" id="irl-cr-2023">
                     <a href="https://doi.org/10.1007/978-3-031-45170-6_19" target="_blank">paper</a> /
@@ -221,20 +189,12 @@
                         </bibtext>
                     </div>              
                     <script language="JavaScript">hideblock('app_bib_irl-cr-23');hideblock('app_abs_irl-cr-23');</script>
-            </td>
-            </tr>
-    
-            <td width="15%" valign="center" align="center"><img src="images/yogasana_classification_tree-1.png" alt="nthu" width="400" height="170"></td>
-            </td>
-            <td width="85%" style="padding:20px;vertical-align:middle">
-                  <!-- <a class="tog" href="#yoga2022">
-                  </a> -->
-                  <papertitle><h3>A View Independent Classification Framework for Yoga Postures</h3></papertitle>
-                  <br>
+              </div>
+              <hr style="border-top: 1px #cccccc80; margin: 5px 0;">
+              <div style="line-height: 1.6;">
+                <papertitle><h3>A View Independent Classification Framework for Yoga Postures</h3></papertitle>
                   Mustafa Chasmai,
-                  <strong>Nirjhar Das</strong>, Aman Bhardwaj and Rahul Garg
-                  <br>
-                  <p></p>
+                  <strong>Nirjhar Das</strong>, Aman Bhardwaj and Rahul Garg<br/>
                   <em> <a href="https://www.springer.com/journal/42979" target="_blank">Springer Nature Computer Science (SNCS), Vol. 3</a>, 2022&emsp14;</em>
                   <div class="paper" id="yoga2022">
                     <a class="tog" href="https://github.com/mustafa1728/Yogasana-Classifier" target="_blank">project</a> /
@@ -258,18 +218,12 @@
                         </bibtext>
                     </div>              
                     <script language="JavaScript">hideblock('app_bib_yoga22');hideblock('app_abs_yoga22');</script>
-            </td>
-            </tr>
-            <td width="15%" valign="center" align="center"><img src="images/natcomm-image.png" alt="nthu" width="400" height="170"></td>
-                <td style="padding:20px;width:75%;vertical-align:middle">
-            
-                    <!-- <a class="tog" href="#natcomm">
-                    </a> -->
-                    <papertitle><h3>Gene expression based inference of cancer drug sensitivity</h3></papertitle>
-                        <br>
+              </div>
+              <hr style="border-top: 1px #cccccc80; margin: 5px 0;">
+              <div>
+                <papertitle><h3>Gene expression based inference of cancer drug sensitivity</h3></papertitle>
                         Smriti Chawla, Anja Rockstroh, Melanie Lehman, Ellca Ratther, Atishay Jain, Anuneet Anand, Apoorva Gupta, Namrata Bhattacharya, Sarita Poonia, Priyadarshini Rai, <strong>Nirjhar Das</strong>, Angshul Majumdar, Jayadeva, Gaurav Ahuja, Brett G. Hollier, Colleen C. Nelson and Debarka Sengupta
-                        <br>
-                        <p></p>
+                        <br/>
                     <em> <a href="https://www.nature.com/ncomms/" target="_blank">Nature Communications, Vol. 13</a>, 2022&emsp14;</em>
                 
                     <div class="paper" id="natcomm">	
@@ -299,10 +253,146 @@
                             
                         </bibtext>
                     </div>
-                    <script language="JavaScript">hideblock('app_bib_natcomm22');hideblock('app_abs_natcomm22');</script>       
-                </td>
+                    <script language="JavaScript">hideblock('app_bib_natcomm22');hideblock('app_abs_natcomm22');</script>
+              </div>
+              <hr style="border-top: 1px #cccccc80; margin: 5px 0;">
+          </div>
+          
+            <!-- <td width="85%" style="padding:20px;vertical-align:middle">
+                  <a class="tog" href="#irl-cr-2023">
+                    
+                  </a>
+                  <papertitle><h3>Linear Contextual Bandits with Hybrid Payoffs: Revisited</h3></papertitle>
+                   <br>
+                  <strong>Nirjhar Das</strong> and Gaurav Sinha
+                  <br>
+                  <p></p>
+                  <em> Accepted at ECML-PKDD 2024</em>
+                  <div class="paper" id="hylinucb-2024">
+                    <a href="https://arxiv.org/abs/2406.10131" target="_blank">paper</a> /
+                      <a class="tog" href="javascript:toggleblock('app_abs_hylinucb-24')">abstract</a> / 
+                      <a class="tog" href="javascript:toggleblock('app_bib_hylinucb-24')">bibtex</a>
+                      <p align="justify">
+                        <i id="app_abs_hylinucb-24">
+                          We study the Linear Contextual Bandit ($\texttt{LinearCB}$) problem in the hybrid reward setting. In this setting, every arm's reward model contains arm specific parameters in addition to parameters shared across the reward models of all the arms. We can easily reduce this setting to two closely related settings; (a) <i>Shared</i> - no arm specific parameters, and (b) <i>Disjoint</i> - only arm specific parameters, enabling the application of two popular state of the art algorithms - $\texttt{LinUCB}$ and $\texttt{DisLinUCB}$ (proposed as Algorithm $1$ in Li et al. 2010). When the arm features are stochastic and satisfy a popular diversity condition, we provide new regret analyses for both $\texttt{LinUCB}$ and $\texttt{DisLinUCB}$ that significantly improves upon the known regret guarantees of these algorithms. Our novel analysis critically exploits the structure of the hybrid rewards and diversity of the arm features. Along with proving these new guarantees, we  introduce a new algorithm $\texttt{HyLinUCB}$ that crucially modifies $\texttt{LinUCB}$ (using a new exploration coefficient) to account for sparsity in the hybrid setting. Under the same diversity assumptions, we prove that at the end of $T$ rounds, $\texttt{HyLinUCB}$ also incurs only $\tilde{O}(\sqrt{T})$ regret. We perform extensive experiments on synthetic and real-world datasets demonstrating strong empirical performance of $\texttt{HyLinUCB}$. When the number of arm specific parameters is much larger than the number of shared parameters, we observe that $\texttt{DisLinUCB}$ incurs the lowest regret. In this case, regret of $\texttt{HyLinUCB}$ is the second best and it is extremely competitive to \DisLinUCB. In all other situations, including our real-world dataset, $\texttt{HyLinUCB}$ has significantly lower regret than $\texttt{LinUCB}$, $\texttt{DisLinUCB}$ and other state of the art baselines we considered. We also empirically observe that the regret of $\texttt{HyLinUCB}$ grows much slower with the number of arms $K$, compared to baselines, making it suitable even for very large action spaces.
+                        </i>
+                      </p>
+                      <bibtext xml:space="preserve" id="app_bib_hylinucb-24">
+                        @InProceedings{das2024linear, </br>
+                          author="Das, Nirjhar,
+                          Sinha, Gaurav", </br>
+                          title="Linear Contextual Bandits with Hybrid Payoffs: Revisited",</br>
+                          booktitle="European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases", </br>
+                          year="2024" </br>
+                        }
+                        </bibtext>
+                    </div>              
+                    <script language="JavaScript">hideblock('app_bib_hylinucb-24');hideblock('app_abs_hylinucb-24');</script>
+            </td>
+            </tr> -->
+
+            <!-- <td width="15%" valign="center" align="center"><img src="images/multi-armed-bandits.jpeg" alt="nthu" width="200" height="150"></td>
+            </td> -->
+            <!-- <td width="85%" style="padding:20px;vertical-align:middle">
+                  <a class="tog" href="#irl-cr-2023">
+                    
+                  </a>
+                  <papertitle><h3>Generalized Linear Contextual Bandits with Limited Adaptivity</h3></papertitle>
+                  <br>
+                  Ayush Sawarni, <strong>Nirjhar Das</strong>, Siddharth Barman and Gaurav Sinha
+                  <br>
+                  <p></p>
+                  <em> <span style="color:red">Spotlight</span> at NeurIPS 2024</em>
+                  <div class="paper" id="limited-glin-2024">
+                    <a href="https://arxiv.org/abs/2404.06831" target="_blank">paper</a> /
+                      <a class="tog" href="javascript:toggleblock('app_abs_limited-glin-24')">abstract</a> / 
+                      <a class="tog" href="javascript:toggleblock('app_bib_limited-glin-24')">bibtex</a>
+                      <p align="justify">
+                        <i id="app_abs_limited-glin-24">
+                          We study the generalized linear contextual bandit problem within the requirements of limited adaptivity.  In this paper, we present two algorithms, $\texttt{B-GLinCB}$ and $\texttt{RS-GLinCB}$, that address, respectively, two prevalent limited adaptivity models: batch learning with stochastic contexts and rare policy switches with adversarial contexts. For both these models, we  establish essentially tight regret bounds. Notably, in the obtained bounds, we manage to eliminate a dependence  on a key parameter $\kappa$, which captures the non-linearity of  the underlying reward model. For our batch learning algorithm $\texttt{B-GLinCB}$, with $\Omega\left( \log{\log T} \right)$ batches, the regret scales as $\tilde{O}(\sqrt{T})$. Further, we establish that our rarely switching algorithm $\texttt{RS-GLinCB}$\ updates its policy at most $\tilde{O}(\log^2 T)$ times and achieves a regret of $\tilde{O}(\sqrt{T})$. Our approach for removing the dependence on $\kappa$ for generalized linear 
+                          contextual bandits might be of independent interest.
+                        </i>
+                      </p>
+                      <bibtext xml:space="preserve" id="app_bib_limited-glin-24">
+                        @article{sawarni2024optimal, </br>
+                          author="Sawarni, Ayush,
+                          Das, Nirjhar,
+                          Barman, Siddharth,
+                          and Sinha, Gaurav", </br>
+                          title="Generalized Linear Contextual Bandits with Limited Adaptivity",</br>
+                          journal="arXiv preprint arXiv:2404.06831", </br>
+                          year="2024", </br>
+                        }
+                        </bibtext>
+                    </div>              
+                    <script language="JavaScript">hideblock('app_bib_limited-glin-24');hideblock('app_abs_limited-glin-24');</script>
+            </td>
+            </tr> -->
+
+            <!-- <td width="15%" valign="center" align="center"><img src="images/APO.png" alt="nthu" width="400" height="180"></td>
+            </td> -->
+            <!-- <td width="85%" style="padding:20px;vertical-align:middle"> -->
+                  <!-- <a class="tog" href="#irl-cr-2023">
+                    
+                  </a> -->
+                  
+            <!-- </td>
+          </tr> -->
+            <!-- <td width="15%" valign="center" align="center"><img src="images/const-irl.png" alt="nthu" width="300" height="240"></td>
+            </td> -->
+            <!-- <td width="85%" style="padding:20px;vertical-align:middle"> -->
+                  <!-- <a class="tog" href="#irl-cr-2023">
+                    
+                  </a> -->
+                  
+            <!-- </td>
+            </tr> -->
+    
+            <!-- <td width="15%" valign="center" align="center"><img src="images/yogasana_classification_tree-1.png" alt="nthu" width="400" height="170"></td>
+            </td> -->
+            <!-- <td width="85%" style="padding:20px;vertical-align:middle"> -->
+                  <!-- <a class="tog" href="#yoga2022">
+                  </a> -->
+                  <!-- <papertitle><h3>A View Independent Classification Framework for Yoga Postures</h3></papertitle>
+                  <br>
+                  Mustafa Chasmai,
+                  <strong>Nirjhar Das</strong>, Aman Bhardwaj and Rahul Garg
+                  <br>
+                  <p></p>
+                  <em> <a href="https://www.springer.com/journal/42979" target="_blank">Springer Nature Computer Science (SNCS), Vol. 3</a>, 2022&emsp14;</em>
+                  <div class="paper" id="yoga2022">
+                    <a class="tog" href="https://github.com/mustafa1728/Yogasana-Classifier" target="_blank">project</a> /
+                    <a href="https://doi.org/10.1007/s42979-022-01376-7" target="_blank">paper</a> /
+                      <a class="tog" href="javascript:toggleblock('app_abs_yoga22')">abstract</a> / 
+                      <a class="tog" href="javascript:toggleblock('app_bib_yoga22')">bibtex</a>
+                      <p align="justify">
+                        <i id="app_abs_yoga22">
+                            Yoga is a globally acclaimed and widely recommended practice for a healthy living. Maintaining correct posture while performing a Yogasana is of utmost importance. In this work, we employ transfer learning from human pose estimation models for extracting 136 key-points spread all over the body to train a random forest classifier which is used for estimation of the Yogasanas. The results are evaluated on an in-house collected extensive yoga video database of 51 subjects recorded from four different camera angles. We use a three step scheme for evaluating the generalizability of a Yoga classifier by testing it on (1) unseen frames, (2) unseen subjects, and (3) unseen camera angles. We argue that for most of the applications, validation accuracies on unseen subjects and unseen camera angles would be most important. We empirically analyze over three public datasets, the advantage of transfer learning and the possibilities of target leakage. We further demonstrate that the classification accuracies critically depend on the cross validation method employed and can often be misleading. To promote further research, we have made key-points dataset and code publicly available.
+                        </i>
+                      </p>
+                      <bibtext xml:space="preserve" id="app_bib_yoga22">
+                        @article{chasmai2022view, <br/>
+                            title={A View Independent Classification Framework for Yoga Postures}, <br/>
+                            author={Chasmai, Mustafa and Das, Nirjhar and Bhardwaj, Aman and Garg, Rahul}, <br/>
+                            journal={Springer Nature Computer Science}, <br/>
+                            url = {https://doi.org/10.1007/s42979-022-01376-7}, <br/>
+                            year={2022} <br/>
+                          }
+                            
+                        </bibtext>
+                    </div>              
+                    <script language="JavaScript">hideblock('app_bib_yoga22');hideblock('app_abs_yoga22');</script>
+            </td>
+            </tr> -->
+            <!-- <td width="15%" valign="center" align="center"><img src="images/natcomm-image.png" alt="nthu" width="400" height="170"></td> -->
+                <!-- <td style="padding:20px;width:75%;vertical-align:middle"> -->
+            
+                    <!-- <a class="tog" href="#natcomm">
+                    </a> -->
+                           
+                <!-- </td>
                 </tr>
-            </tbody>
-        </table>
+            </tbody> 
+          </table> -->
         
 </html>
