@@ -103,35 +103,6 @@
               <hr style="border-top: 1px #cccccc80; margin: 5px 0;">
 
               <div style="line-height: 1.6;">
-                  <papertitle><h3>Linear Contextual Bandits with Hybrid Payoffs: Revisited</h3></papertitle>
-                  <strong>Nirjhar Das</strong> and Gaurav Sinha<br/>
-                  <em>Accepted at ECML-PKDD 2024</em>
-                  <div class="paper" id="hylinucb-2024">
-                      <a href="https://arxiv.org/abs/2406.10131" target="_blank">paper</a> /
-                      <a class="tog" href="javascript:toggleblock('app_abs_hylinucb-24')">abstract</a> / 
-                      <a class="tog" href="javascript:toggleblock('app_bib_hylinucb-24')">bibtex</a>
-                      <p align="justify">
-                          <i id="app_abs_hylinucb-24">
-                              We study the Linear Contextual Bandit ($\texttt{LinearCB}$) problem in the hybrid reward setting. In this setting, every arm's reward model contains arm specific parameters in addition to parameters shared across the reward models of all the arms. We can easily reduce this setting to two closely related settings; (a) <i>Shared</i> - no arm specific parameters, and (b) <i>Disjoint</i> - only arm specific parameters, enabling the application of two popular state of the art algorithms - $\texttt{LinUCB}$ and $\texttt{DisLinUCB}$ (proposed as Algorithm $1$ in Li et al. 2010). When the arm features are stochastic and satisfy a popular diversity condition, we provide new regret analyses for both $\texttt{LinUCB}$ and $\texttt{DisLinUCB}$ that significantly improves upon the known regret guarantees of these algorithms. Our novel analysis critically exploits the structure of the hybrid rewards and diversity of the arm features. Along with proving these new guarantees, we  introduce a new algorithm $\texttt{HyLinUCB}$ that crucially modifies $\texttt{LinUCB}$ (using a new exploration coefficient) to account for sparsity in the hybrid setting. Under the same diversity assumptions, we prove that at the end of $T$ rounds, $\texttt{HyLinUCB}$ also incurs only $\tilde{O}(\sqrt{T})$ regret. We perform extensive experiments on synthetic and real-world datasets demonstrating strong empirical performance of $\texttt{HyLinUCB}$. When the number of arm specific parameters is much larger than the number of shared parameters, we observe that $\texttt{DisLinUCB}$ incurs the lowest regret. In this case, regret of $\texttt{HyLinUCB}$ is the second best and it is extremely competitive to \DisLinUCB. In all other situations, including our real-world dataset, $\texttt{HyLinUCB}$ has significantly lower regret than $\texttt{LinUCB}$, $\texttt{DisLinUCB}$ and other state of the art baselines we considered. We also empirically observe that the regret of $\texttt{HyLinUCB}$ grows much slower with the number of arms $K$, compared to baselines, making it suitable even for very large action spaces.
-                          </i>
-                      </p>
-                      <bibtext xml:space="preserve" id="app_bib_hylinucb-24">
-                          @inproceedings{das2024linear,<br>
-                            title={Linear Contextual Bandits with Hybrid Payoff: Revisited},<br>
-                            author={Das, Nirjhar and Sinha, Gaurav},<br>
-                            booktitle={Joint European Conference on Machine Learning and Knowledge Discovery in Databases},<br>
-                            pages={441--455},<br>
-                            year={2024},<br>
-                            organization={Springer}<br>
-                          }
-                      </bibtext>
-                  </div>
-                  <script language="JavaScript">hideblock('app_bib_hylinucb-24');hideblock('app_abs_hylinucb-24');</script>
-              </div>
-          
-              <hr style="border-top: 1px #cccccc80; margin: 5px 0;">
-          
-              <div style="line-height: 1.6;">
                   <papertitle><h3>Generalized Linear Bandits with Limited Adaptivity</h3></papertitle>
                   Ayush Sawarni, <strong>Nirjhar Das</strong>, Siddharth Barman, and Gaurav Sinha<br/>
                   <em><span style="color:red">Spotlight</span> at NeurIPS 2024</em>
@@ -162,6 +133,37 @@
                   <script language="JavaScript">hideblock('app_bib_limited-glin-24');hideblock('app_abs_limited-glin-24');</script>
               </div>
               <hr style="border-top: 1px #cccccc80; margin: 5px 0;">
+
+              <div style="line-height: 1.6;">
+                  <papertitle><h3>Linear Contextual Bandits with Hybrid Payoffs: Revisited</h3></papertitle>
+                  <strong>Nirjhar Das</strong> and Gaurav Sinha<br/>
+                  <em>Accepted at ECML-PKDD 2024</em>
+                  <div class="paper" id="hylinucb-2024">
+                      <a href="https://arxiv.org/abs/2406.10131" target="_blank">paper</a> /
+                      <a class="tog" href="javascript:toggleblock('app_abs_hylinucb-24')">abstract</a> / 
+                      <a class="tog" href="javascript:toggleblock('app_bib_hylinucb-24')">bibtex</a>
+                      <p align="justify">
+                          <i id="app_abs_hylinucb-24">
+                              We study the Linear Contextual Bandit ($\texttt{LinearCB}$) problem in the hybrid reward setting. In this setting, every arm's reward model contains arm specific parameters in addition to parameters shared across the reward models of all the arms. We can easily reduce this setting to two closely related settings; (a) <i>Shared</i> - no arm specific parameters, and (b) <i>Disjoint</i> - only arm specific parameters, enabling the application of two popular state of the art algorithms - $\texttt{LinUCB}$ and $\texttt{DisLinUCB}$ (proposed as Algorithm $1$ in Li et al. 2010). When the arm features are stochastic and satisfy a popular diversity condition, we provide new regret analyses for both $\texttt{LinUCB}$ and $\texttt{DisLinUCB}$ that significantly improves upon the known regret guarantees of these algorithms. Our novel analysis critically exploits the structure of the hybrid rewards and diversity of the arm features. Along with proving these new guarantees, we  introduce a new algorithm $\texttt{HyLinUCB}$ that crucially modifies $\texttt{LinUCB}$ (using a new exploration coefficient) to account for sparsity in the hybrid setting. Under the same diversity assumptions, we prove that at the end of $T$ rounds, $\texttt{HyLinUCB}$ also incurs only $\tilde{O}(\sqrt{T})$ regret. We perform extensive experiments on synthetic and real-world datasets demonstrating strong empirical performance of $\texttt{HyLinUCB}$. When the number of arm specific parameters is much larger than the number of shared parameters, we observe that $\texttt{DisLinUCB}$ incurs the lowest regret. In this case, regret of $\texttt{HyLinUCB}$ is the second best and it is extremely competitive to \DisLinUCB. In all other situations, including our real-world dataset, $\texttt{HyLinUCB}$ has significantly lower regret than $\texttt{LinUCB}$, $\texttt{DisLinUCB}$ and other state of the art baselines we considered. We also empirically observe that the regret of $\texttt{HyLinUCB}$ grows much slower with the number of arms $K$, compared to baselines, making it suitable even for very large action spaces.
+                          </i>
+                      </p>
+                      <bibtext xml:space="preserve" id="app_bib_hylinucb-24">
+                          @inproceedings{das2024linear,<br>
+                            title={Linear Contextual Bandits with Hybrid Payoff: Revisited},<br>
+                            author={Das, Nirjhar and Sinha, Gaurav},<br>
+                            booktitle={Joint European Conference on Machine Learning and Knowledge Discovery in Databases},<br>
+                            pages={441--455},<br>
+                            year={2024},<br>
+                            organization={Springer}<br>
+                          }
+                      </bibtext>
+                  </div>
+                  <script language="JavaScript">hideblock('app_bib_hylinucb-24');hideblock('app_abs_hylinucb-24');</script>
+              </div>
+          
+              <hr style="border-top: 1px #cccccc80; margin: 5px 0;">
+          
+              
               <div style="line-height: 1.6;">
                 <papertitle><h3>Inverse Reinforcement Learning With Constraint Recovery</h3></papertitle>
                   <strong>Nirjhar Das</strong> and Arpan Chattopadhyay<br/>
