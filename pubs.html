@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <!--<base target="_blank">-->
-  <title>Nirjhar Das | Microsoft Research India</title>
+  <title>Nirjhar Das</title>
   
   <meta name="author" content="Nirjhar Das">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -74,6 +74,33 @@
             <!-- <td width="15%" valign="center" align="center"><img src="images/HyLinUCB.png" alt="nthu" width="300" height="180"></td>
             </td> -->
             <div style="padding: 10px;">
+              <div style="line-height: 1.6;">
+                <papertitle><h3>Active Preference Optimization for Sample Efficient RLHF</h3></papertitle>
+                  <strong>Nirjhar Das</strong>, Souradip Chakroborty, Aldo Pacchiano and Sayak Ray Chowdhury<br/>
+                  <em> Accepted at ECML-PKDD 2025 & ICML 2024 TF2M Workshop</em>
+                  <div class="paper" id="apo-2024">
+                    <a href="https://arxiv.org/abs/2402.10500" target="_blank">paper</a> /
+                      <a class="tog" href="javascript:toggleblock('app_abs_apo-24')">abstract</a> / 
+                      <a class="tog" href="javascript:toggleblock('app_bib_apo-24')">bibtex</a>
+                      <p align="justify">
+                        <i id="app_abs_apo-24">
+                        Large Language Models (LLMs) aligned using Reinforcement Learning from Human Feedback (RLHF) have shown remarkable generation abilities in numerous tasks. However, collecting high-quality human preferences creates costly bottlenecks in practical deployments, and hence, training data are often budgeted. In these scenarios, it is crucial to collect training data (e.g., contexts, a pair of generations for each context, and a preference indicating which generation is better) carefully, yet most of the existing methods sample contexts uniformly at random from a given collection. Given this, under the Bradley-Terry-Luce preference model and with a small budget of training data, we show that uniform sampling of contexts could lead to a policy (i.e., an aligned model) that suffers a constant sub-optimality gap from the optimal policy. This highlights the need for an adaptive context sampling strategy for effective alignment under a small sample budget. To address this, we reformulate RLHF within the contextual preference bandit framework, treating generations as actions, and give a nearly complete characterization of the sub-optimality gap in terms of both lower and upper bounds. First, when the action set is a $d$-dimensional hypercube and the number of samples is $T$, we show an $\Omega(d/\sqrt{T})$ lower bound. Next, we propose an algorithm, \emph{Active Preference Optimization} (\texttt{APO}), that iteratively collects preferences for the most uncertain contexts. We show that the sub-optimality gap of the policy learned via \texttt{APO} matches the lower bound up to a log factor and a non-linearity constant. Finally, we perform experiments on practical datasets to validate \texttt{APO}'s efficacy over existing methods, establishing it as a sample-efficient and cost-effective solution for LLM alignment.
+                        </i>
+                      </p>
+                      <bibtext xml:space="preserve" id="app_bib_apo-24">
+                        @inproceedings{das2024active,<br>
+                            title={Active Preference Optimization for Sample Efficient RLHF},<br>
+                            author={Das, Nirjhar and Chakroborty, Souradip and Pacchiano, Aldo and Chowdhury, Sayak Ray},<br>
+                            booktitle={Joint European Conference on Machine Learning and Knowledge Discovery in Databases},<br>
+                            year={2025},<br>
+                            organization={Springer}<br>
+                          }
+                        </bibtext>
+                    </div>              
+                    <script language="JavaScript">hideblock('app_bib_apo-24');hideblock('app_abs_apo-24');</script>
+              </div>
+
+              <hr style="border-top: 1px #cccccc80; margin: 5px 0;">
 
               <div style="line-height: 1.6;">
                   <papertitle><h3>Linear Contextual Bandits with Hybrid Payoffs: Revisited</h3></papertitle>
@@ -89,11 +116,13 @@
                           </i>
                       </p>
                       <bibtext xml:space="preserve" id="app_bib_hylinucb-24">
-                          @InProceedings{das2024linear,<br>
-                          author="Das, Nirjhar, Sinha, Gaurav",<br>
-                          title="Linear Contextual Bandits with Hybrid Payoffs: Revisited",<br>
-                          booktitle="European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases",<br>
-                          year="2024"<br>
+                          @inproceedings{das2024linear,<br>
+                            title={Linear Contextual Bandits with Hybrid Payoff: Revisited},<br>
+                            author={Das, Nirjhar and Sinha, Gaurav},<br>
+                            booktitle={Joint European Conference on Machine Learning and Knowledge Discovery in Databases},<br>
+                            pages={441--455},<br>
+                            year={2024},<br>
+                            organization={Springer}<br>
                           }
                       </bibtext>
                   </div>
@@ -103,7 +132,7 @@
               <hr style="border-top: 1px #cccccc80; margin: 5px 0;">
           
               <div style="line-height: 1.6;">
-                  <papertitle><h3>Generalized Linear Contextual Bandits with Limited Adaptivity</h3></papertitle>
+                  <papertitle><h3>Generalized Linear Bandits with Limited Adaptivity</h3></papertitle>
                   Ayush Sawarni, <strong>Nirjhar Das</strong>, Siddharth Barman, and Gaurav Sinha<br/>
                   <em><span style="color:red">Spotlight</span> at NeurIPS 2024</em>
                   <div class="paper" id="limited-glin-2024">
@@ -117,43 +146,20 @@
                           </i>
                       </p>
                       <bibtext xml:space="preserve" id="app_bib_limited-glin-24">
-                          @article{sawarni2024optimal,<br>
-                          author="Sawarni, Ayush, Das, Nirjhar, Barman, Siddharth, and Sinha, Gaurav",<br>
-                          title="Generalized Linear Contextual Bandits with Limited Adaptivity",<br>
-                          journal="arXiv preprint arXiv:2404.06831",<br>
-                          year="2024",<br>
-                          }
+                          @inproceedings{sawarni2024Generalized,<br>
+                            author = {Sawarni, Ayush and Das, Nirjhar and Barman, Siddharth and Sinha, Gaurav},<br>
+                            booktitle = {Advances in Neural Information Processing Systems},<br>
+                            editor = {A. Globerson and L. Mackey and D. Belgrave and A. Fan and U. Paquet and J. Tomczak and C. Zhang},<br>
+                            pages = {8329--8369},<br>
+                            publisher = {Curran Associates, Inc.},<br>
+                            title = {Generalized Linear Bandits with Limited Adaptivity},<br>
+                            url = {https://proceedings.neurips.cc/paper_files/paper/2024/file/0faa0019b0a8fcab8e6476bc43078e2e-Paper-Conference.pdf},<br>
+                            volume = {37},<br>
+                            year = {2024}<br>
+                            }
                       </bibtext>
                   </div>
                   <script language="JavaScript">hideblock('app_bib_limited-glin-24');hideblock('app_abs_limited-glin-24');</script>
-              </div>
-              <hr style="border-top: 1px #cccccc80; margin: 5px 0;">
-              <div style="line-height: 1.6;">
-                <papertitle><h3>Active Preference Optimization for Sample Efficient RLHF</h3></papertitle>
-                  <strong>Nirjhar Das</strong>, Souradip Chakroborty, Aldo Pacchiano and Sayak Ray Chowdhury<br/>
-                  <em> Accepted at ICML 2024 Workshop on Theoretical Foundations of Foundation Models</em>
-                  <div class="paper" id="apo-2024">
-                    <a href="https://arxiv.org/abs/2402.10500" target="_blank">paper</a> /
-                      <a class="tog" href="javascript:toggleblock('app_abs_apo-24')">abstract</a> / 
-                      <a class="tog" href="javascript:toggleblock('app_bib_apo-24')">bibtex</a>
-                      <p align="justify">
-                        <i id="app_abs_apo-24">
-                          Reinforcement Learning from Human Feedback (RLHF) is pivotal in aligning Large Language Models (LLMs) with human preferences. Although aligned generative models have shown remarkable abilities in numerous tasks, their reliance on high-quality human preference data creates a costly bottleneck in the practical application of RLHF. One primary reason is that the current methods rely on uniformly picking prompt-generation pairs from a dataset of prompt-generations, to collect human feedback, thereby resulting in sub-optimal alignment under a constrained budget, which highlights the criticality of adaptive strategies in efficient alignment. Recent works [Mehta et al. 2023, Muldrew et al. 2024] have tried to address this problem by designing various heuristics based on generation uncertainty. However, either the assumptions in [Mehta et al. 2023] are restrictive, or [Muldrew et al. 2024] do not provide any rigorous theoretical guarantee. To address these, we reformulate RLHF within the contextual preference bandit framework, treating prompts as contexts, and develop an active-learning algorithm, $\textit{Active Preference Optimization}$ ($\texttt{APO}$), which significantly enhances model alignment by querying preference data from the most important samples, thus achieving superior performance at a small sample budget. We analyze the theoretical performance guarantees of $\texttt{APO}$ under the Bradley-Terry-Luce (BTL) preference model showing that the suboptimality gap of the policy learned via $\texttt{APO}$ scales as $O(1/\sqrt{T})$ for a sample budget of $T$. We also show that collecting preference data by choosing prompts uniformly at random leads to a policy that suffers a constant sub-optimality. We perform detailed experimental evaluations on practical preference datasets to validate \texttt{APO}'s efficacy over the existing methods, establishing it as a sample-efficient and practical solution of alignment in a cost-effective and scalable manner.
-                        </i>
-                      </p>
-                      <bibtext xml:space="preserve" id="app_bib_apo-24">
-                        @article{das2024active, </br>
-                          author="Das, Nirjhar,
-                          Chakroborty, Souradip,
-                          Pacchiano, Aldo,
-                          Chowdhury, Sayak Ray", </br>
-                          title="Active Preference Optimization for Sample Efficient RLHF",</br>
-                          journal="arXiv preprint arXiv:2402.10500", </br>
-                          year="2024" </br>
-                        }
-                        </bibtext>
-                    </div>              
-                    <script language="JavaScript">hideblock('app_bib_apo-24');hideblock('app_abs_apo-24');</script>
               </div>
               <hr style="border-top: 1px #cccccc80; margin: 5px 0;">
               <div style="line-height: 1.6;">
