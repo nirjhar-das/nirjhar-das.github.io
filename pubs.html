@@ -41,9 +41,9 @@
 				<td style="padding:1.5%;width:16%;vertical-align:middle;text-align:center">
 					<a href="pubs.html" target="_self">Publications</a>
 				</td>
-				<td style="padding:1.5%;width:16%;vertical-align:middle;text-align:center">
+				<!-- <td style="padding:1.5%;width:16%;vertical-align:middle;text-align:center">
 					<a href="projects.html" target="_self">Projects</a>
-				</td>
+				</td> -->
                 <td style="padding:1.5%;width:30%;vertical-align:middle;text-align:right">
                   <button id="darkBtn" class="dark-mode-toggle"><img src="images/moon.png" alt="Dark" class="moon-icon" width="30" height="30"><img src="images/sun.png" alt="Light" class="sun-icon" width="30" height="30"></img></button>
 					<!--<button id="darkBtn" class="dark-mode-toggle"><i class="fa-solid fa-moon"></i></button>-->
@@ -73,7 +73,40 @@
             <!-- <br> -->
             <!-- <td width="15%" valign="center" align="center"><img src="images/HyLinUCB.png" alt="nthu" width="300" height="180"></td>
             </td> -->
+
             <div style="padding: 10px;">
+
+            
+              <div style="line-height: 1.6;">
+                <papertitle><h3>Welfarist Formulations for Diverse Similarity Search</h3></papertitle>
+                  Siddharth Barman, <strong>Nirjhar Das</strong>, Shivam Gupta, Kiran Shiragur<br/>
+                  <em> Accepted at ICLR 2026</em>
+                  <div class="paper" id="nash-ann-2026">
+                    <a href="https://www.arxiv.org/abs/2602.08742" target="_blank">paper</a> /
+                      <a class="tog" href="javascript:toggleblock('app_abs_nash-ann-2026')">abstract</a> / 
+                      <a class="tog" href="javascript:toggleblock('app_bib_nash-ann-2026')">bibtex</a>
+                      <p align="justify">
+                        <i id="app_abs_nash-ann-2026">
+                        Nearest Neighbor Search (NNS) is a fundamental problem in data structures with wide-ranging applications, such as web search, recommendation systems, and, more recently, retrieval-augmented generations (RAG). In such recent applications, in addition to the relevance (similarity) of the returned neighbors, diversity among the neighbors is a central requirement. In this paper, we develop principled welfare-based formulations in NNS for realizing diversity across attributes. Our formulations are based on welfare functions---from mathematical economics---that satisfy central diversity (fairness) and relevance (economic efficiency) axioms. With a particular focus on Nash social welfare, we note that our welfare-based formulations provide objective functions that adaptively balance relevance and diversity in a query-dependent manner. Notably, such a balance was not present in the prior constraint-based approach, which forced a fixed level of diversity and optimized for relevance. In addition, our formulation provides a parametric way to control the trade-off between relevance and diversity, providing practitioners with flexibility to tailor search results to task-specific requirements. We develop efficient nearest neighbor algorithms with provable guarantees for  the welfare-based objectives. Notably, our algorithm can be applied on top of any standard ANN method (i.e., use standard ANN method as a subroutine) to efficiently find neighbors that approximately maximize our welfare-based objectives. Experimental results demonstrate that our approach is practical and substantially improves diversity while maintaining high relevance of the retrieved neighbors.
+                        </i>
+                      </p>
+                      <bibtext xml:space="preserve" id="app_bib_nash-ann-2026">
+                        @misc{barman2026welfarist,<br/>
+                              title={Welfarist Formulations for Diverse Similarity Search},<br/> 
+                              author={Siddharth Barman and Nirjhar Das and Shivam Gupta and Kirankumar Shiragur},<br/>
+                              year={2026},<br/>
+                              eprint={2602.08742},<br/>
+                              archivePrefix={arXiv},<br/>
+                              primaryClass={cs.DS},<br/>
+                              url={https://arxiv.org/abs/2602.08742},<br/>
+                            }
+                        </bibtext>
+                    </div>              
+                    <script language="JavaScript">hideblock('app_bib_nash-ann-2026');hideblock('app_abs_nash-ann-2026');</script>
+              </div>
+            
+            <hr style="border-top: 1px #cccccc80; margin: 5px 0;">
+
               <div style="line-height: 1.6;">
                 <papertitle><h3>Cost Efficient Fairness Audit Under Partial Feedback</h3></papertitle>
                   <strong>Nirjhar Das</strong>, Mohit Sharma, Praharsh Nanavati, Kiran Shiragur, Amit Deshpande<br/>
